@@ -1,0 +1,20 @@
+<ul>
+  <li>1. Click on the increase and decrease button. The counter should work properly</li>
+  <li>2. Click on center of the right red circle</li>
+  <li>3. The counter doesn't response anymore</li>
+</ul>
+
+<div class="my-4 flex flex-row space-x-4">
+  <.button phx-click="decrease">-</.button>
+  <h2 class="font-bold text-3xl">
+    <%= @counter %>
+  </h2>
+  <.button phx-click="increase">+</.button>
+</div>
+
+<div>
+  <svg viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
+    <circle id="myCircle" cx="5" cy="5" r="2" stroke="red" />
+    <use href="#myCircle" x="10" fill="red" />
+  </svg>
+</div>
